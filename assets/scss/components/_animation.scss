@@ -1,0 +1,30 @@
+@keyframes marquee1 {
+	from { transform: translateX(0); }
+	to { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+	from { transform: translateX(0); }
+	to { transform: translateX(-100%); }
+}
+
+
+// @keyframes marquee2 {
+// 	0%{
+// 		left:0
+// 	}
+// 	to{
+// 		left:-100%
+// 	}
+
+
+
+// @keyframes masking{
+// 	0% {
+// 	  width: 0%;
+// 	}
+// 	100% {
+// 		width: 100%;
+  
+// 	}
+//   }
