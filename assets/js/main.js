@@ -11,13 +11,12 @@ const visual2 = gsap.timeline({
         trigger:".visual02",
         start : "0% 0%",
         end:"+=800%",
-        markers:true,
         scrub:5,
         pin:true
     },
 })
 visual2.to('.visual02 .text-box01 .text1',{opacity:1,left:'8%',color:'#fff'})
-.to('.visual02 .text-box01 .text2',{opacity:1,left:'-12%',color:'#fff'})
+.to('.visual02 .text-box01 .text2',{opacity:1,left:'-12%',color:'#fff',delay:1})
 .to('.visual02 .text-bg img',{left:'60%'})
 .to('.sc-slide .visual02 .text-box01',{opacity:0,})
 .to('.visual02 .text-bg img',{left:'50%',top:'50%'})
@@ -59,7 +58,6 @@ const abc = gsap.timeline({
         trigger:".sc-business", 
         start:"0% 0%",
         end:"+=500%",
-        markers:true,
         scrub: 2,
         pin : true
     },
@@ -97,7 +95,6 @@ const dark = gsap.timeline({
         trigger:".sc-visual", 
         start:"70%",
         end:"+=100",
-        markers:true,
         scrub:0,
     },
 })
@@ -109,7 +106,6 @@ const bright = gsap.timeline({
         trigger:".visual02", 
         start:"40%",
         end:"+=50",
-        markers:true,
         scrub: 1
     },
 })
@@ -136,10 +132,9 @@ scrollMoInfo = gsap.timeline({
     scrollTrigger:{
       trigger:'.sc-business',
       start:'30%',
-      markers:true
       },
   })
-  scrollMoInfo.to('.text-top',.3,{y:0,opacity:1})
+  scrollMoInfo.to('.text-top',.5,{y:0,opacity:1})
 
 
 // footer text
@@ -147,10 +142,9 @@ footertxt = gsap.timeline({
   scrollTrigger:{
     trigger:'.sc-brand',
     start:'40%',
-    markers:true
     },
 })
-footertxt.to('.footer-text',.3,{y:0,opacity:1,stagger:.5})
+footertxt.to('.footer-text',.6,{y:0,opacity:1,stagger:1})
 
 
 

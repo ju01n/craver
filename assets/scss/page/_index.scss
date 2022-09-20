@@ -340,6 +340,7 @@
             justify-content: space-between;
             flex-wrap: nowrap;
             .management-item {
+                cursor: pointer;
                 position: relative;
                 border-right: 1px solid #222;
                 z-index: 10;
@@ -370,6 +371,7 @@
                     opacity: 0;
                     transform: translate(0, 100%);
                     .title {
+                        display: block;
                         font-size: 36px;
                         padding-bottom: 15px;
                         font-family: 'AppleSDGothic';
